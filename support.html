@@ -63,9 +63,7 @@
     }
     .nav {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 10px;
       margin-top: 24px;
     }
     .nav a, .button {
@@ -77,6 +75,11 @@
       padding: 10px 18px;
       text-decoration: none;
       font-weight: 600;
+    }
+    .nav a {
+      display: inline-flex;
+      align-items: center;
+      white-space: nowrap;
     }
     .button.primary {
       color: #fff;
@@ -116,9 +119,7 @@
   <h1>サポート</h1>
   <p class="lead">スマレシ帳に関するお問い合わせ・サポート情報です。</p>
   <nav class="nav">
-    <a href="./index.html">ホーム</a>
-    <a href="./privacy-policy.html">プライバシーポリシー</a>
-    <a href="./terms.html">利用規約</a>
+    <a href="./index.html">← ホームへ戻る</a>
   </nav>
 </header>
 
