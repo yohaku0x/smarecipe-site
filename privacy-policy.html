@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>プライバシーポリシー | スマレシ帳</title>
+  <style>
+    :root {
+      --bg: #fbf8ee;
+      --card: #fffdf6;
+      --text: #4b4742;
+      --muted: #8a8278;
+      --accent: #c97863;
+      --accent-soft: #f5dfd4;
+      --line: #eadfd0;
+      --green: #6f815d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+    }
+    header {
+      padding: 56px 20px 32px;
+      text-align: center;
+    }
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto 64px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 28px;
+      margin: 20px 0;
+      box-shadow: 0 10px 28px rgba(97, 78, 55, 0.06);
+    }
+    h1 {
+      font-size: clamp(32px, 6vw, 56px);
+      margin: 0 0 8px;
+      letter-spacing: .04em;
+    }
+    h2 {
+      font-size: 24px;
+      margin: 0 0 14px;
+    }
+    h3 {
+      font-size: 18px;
+      margin: 24px 0 8px;
+    }
+    p, li {
+      font-size: 16px;
+    }
+    .lead {
+      color: var(--muted);
+      font-size: 18px;
+      margin: 0 auto;
+      max-width: 680px;
+    }
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 24px;
+    }
+    .nav a, .button {
+      display: inline-block;
+      color: var(--accent);
+      background: #fff7ee;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 10px 18px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .button.primary {
+      color: #fff;
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+    .muted {
+      color: var(--muted);
+    }
+    ul { padding-left: 1.4em; }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 32px 20px 48px;
+      border-top: 1px solid var(--line);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .mini {
+      background: #fffaf1;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+    }
+    code {
+      background: #f3eadf;
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+  <h1>プライバシーポリシー</h1>
+  <p class="lead">スマレシ帳における個人情報およびデータの取り扱いについて説明します。</p>
+  <nav class="nav">
+    <a href="./index.html">ホーム</a>
+    <a href="./support.html">サポート</a>
+  </nav>
+</header>
+
+<main>
+  <section class="card">
+    <p class="muted">最終更新日：2026年5月23日</p>
+    <h2>1. アプリについて</h2>
+    <p>スマレシ帳（以下「本アプリ」）は、ユーザーがレシピを記録・検索・管理するためのアプリです。また、ユーザーが任意でAI機能を有効にした場合、レシピ画像やテキストの解析、レシピ提案などの補助機能を利用できます。</p>
+
+    <h2>2. 収集する情報</h2>
+    <p>本アプリは、ユーザーが入力・保存した以下のデータを端末内に保存します。</p>
+    <ul>
+      <li>レシピ名、材料、手順、調理時間、難易度、カテゴリ、タグなどのレシピ情報</li>
+      <li>ユーザーが選択または撮影した画像</li>
+      <li>AI機能を利用するためにユーザーが入力したGemini APIキー</li>
+      <li>アプリ設定情報</li>
+    </ul>
+
+    <h2>3. データの保存場所</h2>
+    <p>レシピデータ、設定情報、APIキーは原則としてユーザーの端末内に保存されます。当方が独自サーバーでこれらのデータを収集・保存することはありません。</p>
+
+    <h2>4. AI機能について</h2>
+    <p>
+    本アプリでは、ユーザーがGemini APIキーを設定した場合のみ、AI機能を利用できます。
+    AI機能を利用する際、解析対象の画像やテキスト、レシピ情報がGoogle Gemini APIに送信される場合があります。
+    </p>
+
+    <p>
+    AI機能の利用は任意です。
+    APIキーを設定しない場合でも、手入力、テキスト貼り付け、保存済みレシピの閲覧・検索などの基本機能を利用できます。
+    </p>
+
+    <h2>5. APIキーの取り扱い</h2>
+    <p>
+    ユーザーが入力したGemini APIキーは、端末内の安全な保存領域に保存されます。
+    iOSではKeychain、Androidでは暗号化された保存領域を利用しています。
+    </p>
+
+    <p>
+    APIキーが当方のサーバーへ送信・保存されることはありません。
+    ただし、AI機能を利用する際には、Google Gemini APIへのリクエストに使用されます。
+    </p>
+
+    <h2>6. 画像・写真へのアクセス</h2>
+    <p>本アプリは、レシピ画像の選択や撮影のために、写真ライブラリまたはカメラへのアクセスを求める場合があります。選択または撮影された画像は、ユーザーの操作に基づき、レシピ入力やAI解析に使用されます。</p>
+
+    <h2>7. 第三者サービス</h2>
+    <p>本アプリは、AI機能の提供にGoogle Gemini APIを利用する場合があります。Google Gemini APIの利用に関しては、Googleの規約およびプライバシーポリシーが適用されます。</p>
+    <p>Google Gemini APIへ送信されるデータの取り扱いについては、Googleのプライバシーポリシーをご確認ください。</p>
+
+    <h2>8. データのエクスポート・インポート</h2>
+    <p>本アプリでは、ユーザーが自身のレシピデータをエクスポート・インポートできる場合があります。エクスポートしたファイルの管理はユーザー自身の責任で行ってください。</p>
+
+    <h2>9. データの削除</h2>
+    <p>アプリ内で保存したレシピは、ユーザー自身の操作で削除できます。また、アプリを削除すると、端末内に保存されたアプリデータも削除される場合があります。</p>
+
+    <h2>10. お問い合わせ</h2>
+    <p>本ポリシーに関するお問い合わせは、以下のサポートページからご連絡ください。</p>
+    <p><a class="button" href="./support.html">サポートページ</a></p>
+
+    <h2>11. 改定</h2>
+    <p>本プライバシーポリシーは、必要に応じて変更されることがあります。重要な変更がある場合は、本ページ上でお知らせします。</p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 スマレシ帳</p>
+</footer>
+
+</body>
+</html>
